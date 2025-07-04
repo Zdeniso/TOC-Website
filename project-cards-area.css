@@ -13,12 +13,13 @@
     border-radius: 7px;
     margin : 10px;
     height: 250px;
-    width: 325px;
+    flex: 1 1 325px;
+    max-width: 1;
     color: var(--font-color);
 
 }
 
-.card__header {
+.project-card__header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,7 +28,7 @@
 
 }
 
-.card__acronym {
+.project-card__acronym {
     background-color: rgb(1, 97, 1);
     font-weight: bold;
     font-size: 1rem;
@@ -36,26 +37,26 @@
 
 }
 
-.card__title-and-description h2{
+.project-card__title-and-description h2{
     font-size: 17px;
     font-weight: bold;
     flex-direction: column;
     margin: 0px;
 }
 
-.card__title-and-description p{
+.project-card__title-and-description p{
     font-size: 14px;
     font-style: italic;
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
 }
 
-.card__content {
+.project-card__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.card__values {
+.project-card__values {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -64,12 +65,12 @@
     font-weight: bold;    
 }
 
-.card__separator {
+.project-card__separator {
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.1); /* clair et discret */
   margin: 0;
 }
 
-.criteria {
+.project-card__criteria {
     color: #6d7072;
 }
