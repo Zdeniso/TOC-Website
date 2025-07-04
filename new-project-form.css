@@ -1,0 +1,8 @@
+#new-project-modal {
+    background-color: black;
+}
+
+dialog::backdrop {
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(3px);
+}
