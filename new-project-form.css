@@ -1,8 +1,6 @@
-@import url("styles.css");
+
 
 dialog {
-    display: flex;
-    flex-direction: column;
     width: clamp(300px, 60%, 500px);
     background-color: var(--background-color200);
     border-radius: 10px;

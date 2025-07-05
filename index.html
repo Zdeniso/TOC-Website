@@ -22,7 +22,10 @@
         <!-- Header Area -->
         <header>
             <h1>Projects</h1>
-            <nav id="action-buttons"><span class="material-icons">download</span><button id="new-project__button">+ New Project</button></nav>
+            <nav id="action-buttons">
+                <span class="material-icons">download</span>
+                <button id="new-project__button" onclick="document.getElementById('form__area').showModal()">+ New Project</button>
+            </nav>
         </header>
         <!-- Content Area - Project card -->
         <div class="content-area">
@@ -222,52 +225,52 @@
                     </div>                             
                 </div>
             </section>
-        </div>
-        <dialog id="form__area">
-            <form>
-                <h2 id="form__main-title">New Project</h2>
-                <hr class="greyline_separator" />
-                <div id="form__content">
-                    <section class="form__section">
-                        <label for="form__title-section"><span class="material-icons">apartment</span>Name</label>
-                        <input class="form__answers" type="text" maxlength="200"/>
-                    </section>
-                    <section class="form__section">
-                        <label for="form__title-section"><span class="material-icons">list</span>Description</label>
-                        <textarea id="form__text-area" class="form__answers" maxlength="400" 
-                        placeholder="Give your project a nice description so people are jealous about it"></textarea>
-                    </section>
-                    <section class="form__section">
-                        <label for="form__title-section"><span class="material-icons">manage_accounts</span>Role</label>
-                        <select class="form__answers">
-                            <option>Architect</option>
-                            <option>CVCSE</option>
-                            <option>Structural</option>
-                            <option>Electrical Engineer</option>
-                            <option>Client</option>
-                        </select>
-                    </section>
-                    <section class="form__section">
-                        <label for="form__title-section"><span class="material-icons">contact_support</span>Status</label>
-                        <select class="form__answers">
-                            <option>Pending</option>
-                            <option>In Progress</option>
-                            <option>Completed</option>
-                            <option>Archived</option>
-                        </select>
-                    </section>
-                    <section class="form__section">
-                        <label for="form__title-section"><span class="material-icons">calendar_month</span>Finish Date</label>
-                        <input class="form__answers" placeholder="mm/dd/yyyy" type="datetime"/>
-                    </section>                
-                </div>
-                <div id="form__footer">
-                    <button id="cancel-button">Cancel</button>
-                    <button id="accept-button">Accept</button>
-                </div>
-            </form>
-        </dialog>
+        </div>       
     </main>
+    <dialog id="form__area">
+        <form>
+            <h2 id="form__main-title">New Project</h2>
+            <hr class="greyline_separator" />
+            <div id="form__content">
+                <section class="form__section">
+                    <label for="form__title-section"><span class="material-icons">apartment</span>Name</label>
+                    <input class="form__answers" type="text" maxlength="200"/>
+                </section>
+                <section class="form__section">
+                    <label for="form__title-section"><span class="material-icons">list</span>Description</label>
+                    <textarea id="form__text-area" class="form__answers" maxlength="400" 
+                    placeholder="Give your project a nice description so people are jealous about it"></textarea>
+                </section>
+                <section class="form__section">
+                    <label for="form__title-section"><span class="material-icons">manage_accounts</span>Role</label>
+                    <select class="form__answers">
+                        <option>Architect</option>
+                        <option>CVCSE</option>
+                        <option>Structural</option>
+                        <option>Electrical Engineer</option>
+                        <option>Client</option>
+                    </select>
+                </section>
+                <section class="form__section">
+                    <label for="form__title-section"><span class="material-icons">contact_support</span>Status</label>
+                    <select class="form__answers">
+                        <option>Pending</option>
+                        <option>In Progress</option>
+                        <option>Completed</option>
+                        <option>Archived</option>
+                    </select>
+                </section>
+                <section class="form__section">
+                    <label for="form__title-section"><span class="material-icons">calendar_month</span>Finish Date</label>
+                    <input class="form__answers" placeholder="mm/dd/yyyy" type="datetime"/>
+                </section>                
+            </div>
+            <div id="form__footer">
+                <button id="cancel-button" onclick="document.getElementById('form__area').close()">Cancel</button>
+                <button id="accept-button" onclick="document.getElementById('form__area').close()">Accept</button>
+            </div>
+        </form>
+    </dialog>
 </body>
 </html>
 
@@ -277,4 +280,4 @@
     document.getElementById("form__area").showModal();
   });
 </script>
---------------------------------------------->
+-->
