@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="main.css"/>
     <link rel="icon" href="./assets/toc-favicon.ico"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-
 </head>
 <body>
     <aside>
@@ -20,12 +19,10 @@
 
     <main id="main-area">
         <header>
-            <h1>Proazeazeects</h1>
+            <h1>Projects</h1>
             <nav id="action-buttons"><span class="material-icons">download</span><button id="new-project__button">+ New Project</button></nav>
         </header>
-
         <div class="content-area">
-
             <section class="project-card">
                 <div class="project-card__header">
                     <div class="project-card__acronym">DE</div>
@@ -226,38 +223,56 @@
         </div>
     </main>
 
-    <!-- MODAL CONTAINER FOR NEW PROJECT CREATION FORM-->
+    <!--     MODAL CONTAINER FOR NEW PROJECT CREATION FORM-->
     <dialog id="form__area">
-        <form id="form__new-project">
-            <h2 id="form__title">New project</h2>
+        <form>
+            <h2 id="form__main-title">New Project</h2>
             <hr class="greyline_separator" />
             <div id="form__content">
-                <section>
-                    <h4 id="form__title-section">Name</h4>
-                    <input aria-label="AAAAAA"/>
+                <section class="form__section">
+                    <label id="form__title-section"><span class="material-icons">apartment</span>Name</label>
+                    <input class="form__answers" type="text" maxlength="200"/>
                 </section>
-                <section>
-                    <h4 id="form__title-section">Description</h4>
-                    <textarea aria-label="BBBBB">
+                <section class="form__section">
+                    <label id="form__title-section"><span class="material-icons">list</span>Description</label>
+                    <textarea id="special-text-area" class="form__answers" maxlength="400" 
+                    placeholder="Give your project a nice description so people are jealous about it"></textarea>
                 </section>
+                <section class="form__section">
+                    <label id="form__title-section"><span class="material-icons">manage_accounts</span>Role</label>
+                    <select class="form__answers">
+                        <option>Architect</option>
+                        <option>CVCSE</option>
+                        <option>Structural</option>
+                        <option>Electrical Engineer</option>
+                        <option>Client</option>
+                    </select>
+                </section class="form__section">
+                <section class="form__section">
+                    <label id="form__title-section"><span class="material-icons">contact_support</span>Status</label>
+                    <select class="form__answers">
+                        <option>Pending</option>
+                        <option>In Progress</option>
+                        <option>Completed</option>
+                        <option>Archived</option>
+                    </select>
+                </section class="form__section">
                 <section>
-                    <h4 id="form__title-section">Role</h4>
-                    <input/>
-                </section>
-                <section>
-                    <h4 id="form__title-section">Status</h4>
-                    <input/>
-                </section>
-                <section>
-                    <h4 id="form__title-section">Finish Date</h4>
-                    <input/>
+                    <label id="form__title-section"><span class="material-icons">calendar_month</span>Finish Date</label>
+                    <p class="form__answers">Need to be find</p>
                 </section>            
             </div>
             <div id="form__footer">
-                <button id="Button 1">Cancel</button>
-                <button id="Button 2">Accept</button>
+                <button id="cancel-button">Cancel</button>
+                <button id="accept-button">Accept</button>
             </div>
         </form>
     </dialog>
 </body>
 </html>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("form__area")?.showModal();
+  });
+</script>
