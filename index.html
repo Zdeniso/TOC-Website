@@ -8,7 +8,11 @@
     <link rel="icon" href="./assets/toc-favicon.ico"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 </head>
+
+
 <body>
+
+    <!-- ASIDE AREA -->
     <aside>
         <img id="company-logo" src="./assets/company-logo.svg" alt="Company logo" />
         <div>
@@ -17,11 +21,14 @@
         </div>
     </aside>
 
+    <!-- MAIN AREA -->
     <main id="main-area">
+        <!-- Header Area -->
         <header>
             <h1>Projects</h1>
             <nav id="action-buttons"><span class="material-icons">download</span><button id="new-project__button">+ New Project</button></nav>
         </header>
+        <!-- Content Area - Project card -->
         <div class="content-area">
             <section class="project-card">
                 <div class="project-card__header">
@@ -223,7 +230,7 @@
         </div>
     </main>
 
-    <!--     MODAL CONTAINER FOR NEW PROJECT CREATION FORM-->
+    <!-- New Project Form -->
     <dialog id="form__area">
         <form>
             <h2 id="form__main-title">New Project</h2>
@@ -233,11 +240,13 @@
                     <label class="form__title-section"><span class="material-icons">apartment</span>Name</label>
                     <input class="form__answers" type="text" maxlength="200"/>
                 </section>
+
                 <section class="form__section">
                     <label class="form__title-section"><span class="material-icons">list</span>Description</label>
                     <textarea id="special-text-area" class="form__answers" maxlength="400" 
                     placeholder="Give your project a nice description so people are jealous about it"></textarea>
                 </section>
+
                 <section class="form__section">
                     <label class="form__title-section"><span class="material-icons">manage_accounts</span>Role</label>
                     <select class="form__answers">
@@ -248,6 +257,7 @@
                         <option>Client</option>
                     </select>
                 </section>
+
                 <section class="form__section">
                     <label class="form__title-section"><span class="material-icons">contact_support</span>Status</label>
                     <select class="form__answers">
@@ -261,10 +271,7 @@
                 <section class="form__section">
                     <label class="form__title-section"><span class="material-icons">calendar_month</span>Finish Date</label>
                     <input class="form__answers" placeholder="mm/dd/yyyy" type="datetime"/>
-                </section>      
-                
-                
-
+                </section>                
             </div>
             <div id="form__footer">
                 <button id="cancel-button">Cancel</button>
@@ -275,8 +282,11 @@
 </body>
 </html>
 
+
+<!-- USE FOR CONTAINER MODAL AUTO REFRESH
 <script>
   window.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("form__area")?.showModal();
+    document.getElementById("form__area").showModal();
   });
 </script>
+--------------------------------------------->

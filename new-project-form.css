@@ -58,7 +58,7 @@ dialog::backdrop {
     margin: 0;
 }
 
-#special-text-area {
+#form__text-area {
     resize: none;
     min-height: 100px;
 }
