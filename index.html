@@ -34,7 +34,7 @@
                         <p>This is just a default project. You may deleted if you want</p>                  
                     </div>
                 </div>
-                <hr class="project-card__separator" />
+                <hr class="greyline_separator" />
                 <div class="card__content">
                     <div class="project-card__values">
                             <p class="project-card__criteria">Status</p>
@@ -63,7 +63,7 @@
                         <p>This is just a default project. You may deleted if you want</p>                  
                     </div>
                 </div>
-                <hr class="project-card__separator" />
+                <hr class="greyline_separator" />
                 <div class="card__content">
                     <div class="project-card__values">
                             <p class="project-card__criteria">Status</p>
@@ -91,7 +91,7 @@
                         <p>This is just a default project. You may deleted if you want</p>                  
                     </div>
                 </div>
-                <hr class="project-card__separator" />
+                <hr class="greyline_separator" />
                 <div class="card__content">
                     <div class="project-card__values">
                             <p class="project-card__criteria">Status</p>
@@ -119,7 +119,7 @@
                         <p>This is just a default project. You may deleted if you want</p>                  
                     </div>
                 </div>
-                <hr class="project-card__separator" />
+                <hr class="greyline_separator" />
                 <div class="card__content">
                     <div class="project-card__values">
                             <p class="project-card__criteria">Status</p>
@@ -147,7 +147,7 @@
                         <p>This is just a default project. You may deleted if you want</p>                  
                     </div>
                 </div>
-                <hr class="project-card__separator" />
+                <hr class="greyline_separator" />
                 <div class="card__content">
                     <div class="project-card__values">
                             <p class="project-card__criteria">Status</p>
@@ -175,7 +175,7 @@
                         <p>This is just a default project. You may deleted if you want</p>                  
                     </div>
                 </div>
-                <hr class="project-card__separator" />
+                <hr class="greyline_separator" />
                 <div class="card__content">
                     <div class="project-card__values">
                             <p class="project-card__criteria">Status</p>
@@ -203,7 +203,7 @@
                         <p>This is just a default project. You may deleted if you want</p>                  
                     </div>
                 </div>
-                <hr class="project-card__separator" />
+                <hr class="greyline_separator" />
                 <div class="card__content">
                     <div class="project-card__values">
                             <p class="project-card__criteria">Status</p>
@@ -225,6 +225,39 @@
             </section>
         </div>
     </main>
-    <dialog id="new-project-modal"></dialog>
+
+    <!-- MODAL CONTAINER FOR NEW PROJECT CREATION FORM-->
+    <dialog id="form__area">
+        <form id="form__new-project">
+            <h2 id="form__title">New project</h2>
+            <hr class="greyline_separator" />
+            <div id="form__content">
+                <section>
+                    <h4 id="form__title-section">Name</h4>
+                    <input aria-label="AAAAAA"/>
+                </section>
+                <section>
+                    <h4 id="form__title-section">Description</h4>
+                    <textarea aria-label="BBBBB">
+                </section>
+                <section>
+                    <h4 id="form__title-section">Role</h4>
+                    <input/>
+                </section>
+                <section>
+                    <h4 id="form__title-section">Status</h4>
+                    <input/>
+                </section>
+                <section>
+                    <h4 id="form__title-section">Finish Date</h4>
+                    <input/>
+                </section>            
+            </div>
+            <div id="form__footer">
+                <button id="Button 1">Cancel</button>
+                <button id="Button 2">Accept</button>
+            </div>
+        </form>
+    </dialog>
 </body>
 </html>

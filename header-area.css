@@ -1,3 +1,5 @@
+@import url("stylesheet.css");
+
 header {
     display: flex;
     flex-wrap: nowrap;

@@ -1,6 +1,4 @@
-:root {
-    --font-color: white;
-}
+@import url("stylesheet.css");
 
 * {
     font-family: "Inter", sans-serif;
@@ -16,12 +14,12 @@ body {
 }
 
 main {
-    background-color: #1E2022;
+    background-color: var(--background-color100);
 }
 
 aside {
     display: flex;
     flex-direction: column;
-    background-color: #2F3133;
+    background-color: var(--background-color200);
     color: var(--font-color);
 }

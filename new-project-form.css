@@ -1,8 +1,30 @@
-#new-project-modal {
-    background-color: black;
+@import url("stylesheet.css");
+
+dialog {
+    background-color: var(--background-color100);
 }
 
 dialog::backdrop {
     background-color: rgba(0,0,0,0.5);
     backdrop-filter: blur(3px);
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#form__title {
+     color: var(--font-color);
+}
+
+#form__title-section {
+   color: grey;
+}
+
+#form__content {
+
+}
+
+
