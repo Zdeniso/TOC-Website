@@ -230,16 +230,16 @@
             <hr class="greyline_separator" />
             <div id="form__content">
                 <section class="form__section">
-                    <label id="form__title-section"><span class="material-icons">apartment</span>Name</label>
+                    <label class="form__title-section"><span class="material-icons">apartment</span>Name</label>
                     <input class="form__answers" type="text" maxlength="200"/>
                 </section>
                 <section class="form__section">
-                    <label id="form__title-section"><span class="material-icons">list</span>Description</label>
+                    <label class="form__title-section"><span class="material-icons">list</span>Description</label>
                     <textarea id="special-text-area" class="form__answers" maxlength="400" 
                     placeholder="Give your project a nice description so people are jealous about it"></textarea>
                 </section>
                 <section class="form__section">
-                    <label id="form__title-section"><span class="material-icons">manage_accounts</span>Role</label>
+                    <label class="form__title-section"><span class="material-icons">manage_accounts</span>Role</label>
                     <select class="form__answers">
                         <option>Architect</option>
                         <option>CVCSE</option>
@@ -247,20 +247,24 @@
                         <option>Electrical Engineer</option>
                         <option>Client</option>
                     </select>
-                </section class="form__section">
+                </section>
                 <section class="form__section">
-                    <label id="form__title-section"><span class="material-icons">contact_support</span>Status</label>
+                    <label class="form__title-section"><span class="material-icons">contact_support</span>Status</label>
                     <select class="form__answers">
                         <option>Pending</option>
                         <option>In Progress</option>
                         <option>Completed</option>
                         <option>Archived</option>
                     </select>
-                </section class="form__section">
-                <section>
-                    <label id="form__title-section"><span class="material-icons">calendar_month</span>Finish Date</label>
-                    <p class="form__answers">Need to be find</p>
-                </section>            
+                </section>
+
+                <section class="form__section">
+                    <label class="form__title-section"><span class="material-icons">calendar_month</span>Finish Date</label>
+                    <input class="form__answers" placeholder="mm/dd/yyyy" type="datetime"/>
+                </section>      
+                
+                
+
             </div>
             <div id="form__footer">
                 <button id="cancel-button">Cancel</button>
