@@ -8,10 +8,7 @@
     <link rel="icon" href="./assets/toc-favicon.ico"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 </head>
-
-
 <body>
-
     <!-- ASIDE AREA -->
     <aside>
         <img id="company-logo" src="./assets/company-logo.svg" alt="Company logo" />
@@ -20,7 +17,6 @@
             <nav class="navigation-area__tabs"><span class="material-icons">group</span>Users</nav>
         </div>
     </aside>
-
     <!-- MAIN AREA -->
     <main id="main-area">
         <!-- Header Area -->
@@ -58,7 +54,6 @@
                     </div>                             
                 </div>
             </section>
-            
             <section class="project-card">
                 <div class="project-card__header">
                     <div class="project-card__acronym">DE</div>
@@ -229,7 +224,6 @@
             </section>
         </div>
     </main>
-
     <!-- New Project Form -->
     <dialog id="form__area">
         <form>
@@ -237,18 +231,16 @@
             <hr class="greyline_separator" />
             <div id="form__content">
                 <section class="form__section">
-                    <label class="form__title-section"><span class="material-icons">apartment</span>Name</label>
+                    <label for="form__title-section"><span class="material-icons">apartment</span>Name</label>
                     <input class="form__answers" type="text" maxlength="200"/>
                 </section>
-
                 <section class="form__section">
-                    <label class="form__title-section"><span class="material-icons">list</span>Description</label>
+                    <label for="form__title-section"><span class="material-icons">list</span>Description</label>
                     <textarea id="special-text-area" class="form__answers" maxlength="400" 
                     placeholder="Give your project a nice description so people are jealous about it"></textarea>
                 </section>
-
                 <section class="form__section">
-                    <label class="form__title-section"><span class="material-icons">manage_accounts</span>Role</label>
+                    <label for="form__title-section"><span class="material-icons">manage_accounts</span>Role</label>
                     <select class="form__answers">
                         <option>Architect</option>
                         <option>CVCSE</option>
@@ -257,9 +249,8 @@
                         <option>Client</option>
                     </select>
                 </section>
-
                 <section class="form__section">
-                    <label class="form__title-section"><span class="material-icons">contact_support</span>Status</label>
+                    <label for="form__title-section"><span class="material-icons">contact_support</span>Status</label>
                     <select class="form__answers">
                         <option>Pending</option>
                         <option>In Progress</option>
@@ -267,9 +258,8 @@
                         <option>Archived</option>
                     </select>
                 </section>
-
                 <section class="form__section">
-                    <label class="form__title-section"><span class="material-icons">calendar_month</span>Finish Date</label>
+                    <label for="form__title-section"><span class="material-icons">calendar_month</span>Finish Date</label>
                     <input class="form__answers" placeholder="mm/dd/yyyy" type="datetime"/>
                 </section>                
             </div>

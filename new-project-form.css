@@ -38,7 +38,7 @@ dialog::backdrop {
     margin: 5px 0px;
 }
 
-.form__title-section {
+label[for="form__title-section"] {
     display: flex;
     gap: 5px;
     align-items: center;
