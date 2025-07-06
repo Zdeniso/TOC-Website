@@ -238,11 +238,62 @@
             <header>
                 <h1>Hospital Center</h1>
                 <p>Community hospital located at downtown</p>
+                <hr class="greyline_separator"/>
             </header>
             <div id="project-detail-page__content-area">
-                <section id="project-detail">Project detail</section>
-                <section id="todo-list">Todolist</section>
-                <section id="viewer3D">Viewer3D</section>              
+                <section id="project-detail">
+                    <div id="project-detail__edit-zone"><p>HC</p><button>Edit</button></div>
+                    <div id="project-detail__title-and-description">
+                        <h1>Hospital Center</h1>
+                        <p>Community hospital located at downtown</p>
+                    </div>
+                    <div id="project-detail__informations">
+                        <div>
+                            <h2>Status</h2>
+                            <p>Active</p>
+                        </div>
+                        <div>
+                            <h2>Cost</h2>
+                            <p>$ 2'541.00</p>
+                        </div>
+                        <div>
+                            <h2>Role</h2>
+                            <p>Engineer</p>
+                        </div>   
+                        <div>
+                            <h2>Finish date</h2>
+                            <p>2023-05-01</p>
+                        </div>
+                    </div>
+                    <div id="project-detail__progress-bar">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;">80%</div>
+                        </div>               
+                    </div>
+                </section>
+                <section id="todo-list">
+                    <div id="todo-list__adding-zone">
+                        <p>To-Do</p>
+                        <div>
+                            <span class="material-icons">search</span>
+                            <input class="search-bar-todo-list" type="text" maxlength="50" placeholder="Search To-Do's by name"/>
+                            <span class="material-icons">add</span>
+                        </div>
+                    </div>
+                    <div id="todo-list__listing-zone">
+                        <div class="todo-event">
+                            <span class="material-icons">construction</span>
+                            <p>Make anything here as you want, even something longer</p>
+                            <p>Fri, 20 sep</p>
+                        </div>
+                        <div class="todo-event">
+                            <span class="material-icons">construction</span>
+                            <p>Make anything here as you want, even something longer</p>
+                            <p>Fri, 20 sep</p>
+                        </div>
+                    </div>
+                </section>    
+                <section id="viewer3D">Viewer3D - WIP</section>              
             </div>
         </div>
     </main>
@@ -252,7 +303,7 @@
  OOOOOOOOOOOOOOOOOOOOOO
  OOOOOOOOOOOOOOOOOOOOOOOOO -->
 
-
+<!-- FORM -->
     <dialog id="form__area">
         <form>
             <h2 id="form__main-title">New Project</h2>
