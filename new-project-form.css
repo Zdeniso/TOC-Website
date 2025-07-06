@@ -1,5 +1,3 @@
-
-
 dialog {
     width: clamp(300px, 60%, 500px);
     background-color: var(--background-color200);

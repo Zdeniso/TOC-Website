@@ -1,0 +1,57 @@
+main #project-detail-page {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+/* Header style */
+#project-detail-page header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    height: 70px;
+    padding: 30px;
+}
+
+#project-detail-page header h1 {
+    color: var(--font-color);
+    font-size: var(--font-size-main-title);
+    margin-bottom: 0;
+    margin: 0px;
+}
+
+#project-detail-page header p {
+    color: grey;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Content style */
+#project-detail-page__content-area {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas: 
+        "project-detail viewer3d"
+        "todo-list viewer3d";
+    background-color: rgb(0, 255, 42);   
+    flex: 1;
+}
+
+#project-detail {
+    grid-area: project-detail;
+    background-color: bisque;
+}
+
+#todo-list {
+    grid-area: todo-list;
+    background-color: aqua;
+}
+
+#viewer3D {
+    grid-area: viewer3d;
+    background-color: rgba(187, 139, 179, 0.89);
+}
+

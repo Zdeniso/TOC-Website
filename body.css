@@ -12,12 +12,16 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     background-color: var(--background-color100);
 }
 
 aside {
     display: flex;
     flex-direction: column;
+    height: 100vh;
     background-color: var(--background-color200);
     color: var(--font-color);
 }
